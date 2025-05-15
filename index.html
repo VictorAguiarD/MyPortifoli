@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Victor Matheus - Desenvolvedor Python</title>
+    <meta name="description" content="Portfólio de Victor Matheus - Desenvolvedor Python e outras tecnologias. Confira meus projetos e experiências profissionais.">
+    <meta name="keywords" content="portfolio, desenvolvedor, python, programação, victor matheus">
+    <meta name="author" content="Victor Matheus">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-toggle">
+                    <h1>Victor Matheus</h1>
+                    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="dark-mode-toggle" aria-label="Alternar modo escuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Sou Victor Matheus Silva Aguiar, profissional apaixonado por tecnologia, especialmente pelas possibilidades que a linguagem Python oferece no desenvolvimento de soluções eficientes e inteligentes.
+
+                        Atualmente, atuo como Analista de Negócios, com forte atuação em bancos de dados (SQL Server). Tenho experiência em projetos voltados à inovação, sempre com foco na resolução de problemas complexos de forma prática e estratégica.
+                        
+                        Acredito no poder do aprendizado contínuo — por isso, levo comigo a frase:
+                        "Serei sempre aluno, pois sempre estarei aprendendo."
+                        Essa mentalidade me impulsiona a buscar constante evolução, tanto pessoal quanto profissional, aprimorando o que já sei e explorando novas áreas de conhecimento.
+                        
+                        Não me considero o melhor, mas sou movido por determinação, curiosidade e comprometimento com a qualidade do que entrego. Estou sempre pronto para colaborar, aprender e gerar valor onde for necessário.</p>
+                    <div class="habilidades">
+                        <h3>Habilidades</h3>
+                        <div class="habilidades-lista" id="habilidades-container">
+                            <!-- Habilidades serão carregadas do LinkedIn -->
+                            <div class="carregando">Carregando habilidades...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="image.png" alt="Foto de Victor Matheus" class="foto-perfil" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section">
+        <div class="container">
+            <h2>Experiência Profissional</h2>
+            <div class="experiencia-container" id="experiencia-container">
+                <!-- Experiências serão carregadas do LinkedIn -->
+                <div class="carregando">
+                    <i class="fas fa-spinner fa-spin"></i> Carregando experiências...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container" id="projetos-container">
+                <div class="carregando">
+                    <i class="fas fa-spinner fa-spin"></i> Carregando projetos do GitHub...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-container">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-envelope"></i> victormatheus5875@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (81) 98413-0211</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Recife, PE - Brasil</p>
+                    
+                    <a href="https://wa.me/5581984130211" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Enviar Mensagem no WhatsApp
+                    </a>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/VictorAguiarD" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/victor-aguiar-069785266/" target="_blank" aria-label="LinkedIn" id="linkedin-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form id="form-contato" class="form-contato" action="https://formsubmit.co/victormatheus5875@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">
+                        <span class="btn-text">Enviar Mensagem</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="ano-atual"></span> Victor Matheus. Todos os direitos reservados.</p>
+            <div class="links-uteis">
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+                <a href="#" id="btn-topo">Voltar ao topo <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
