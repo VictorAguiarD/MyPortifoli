@@ -159,7 +159,7 @@ async function carregarExperienciasLinkedIn() {
     container.innerHTML = '<div class="carregando"><i class="fas fa-spinner fa-spin"></i> Carregando experiências...</div>';
 
     try {
-        // Simulação de API - substitua pela integração real
+        // Simulação de API, em um futuro breve colocar a api de fato
         const experiencias = await simularAPILinkedIn();
         
         container.innerHTML = '';
@@ -192,10 +192,10 @@ async function carregarExperienciasLinkedIn() {
 }
 
 async function simularAPILinkedIn() {
-    // Simula um delay de rede
+    
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    // Dados de exemplo - substitua pelos seus dados reais
+    
     return [
         {
             title: "Analista de Negócios em TI",
@@ -228,7 +228,7 @@ async function simularAPILinkedIn() {
             title: "Assistente Administrativo",
             company: "Grupo Ser Educacional",
             dateRange: "Período de trabalho: Set 2023 a Jan 2025",
-            description: "Suporte administrativo com foco em análise de dados e criação de relatórios financeiros.",
+            description: "Suporte administrativo com na área acadêmica e criando dashbord via excel de alunos que não conseguiram se matricular automaticamente",
             hardSkills: [
                 "Microsoft Excel",
                 "Habilidades analíticas",
@@ -285,7 +285,7 @@ async function carregarHabilidadesLinkedIn() {
     if (!container) return;
 
     try {
-        // Simulação - Habilidades
+        // Habilidades
         const habilidades = await simularHabilidadesLinkedIn();
         
         container.innerHTML = '';
